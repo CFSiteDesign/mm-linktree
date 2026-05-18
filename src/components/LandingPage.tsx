@@ -110,7 +110,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
             <span>Mad Monkey eSIM</span>
             <span className="text-xl">📱</span>
           </a>
-          <a href="#" className="w-full py-5 px-8 border-4 border-black flex items-center justify-between font-medium text-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg" style={{ backgroundColor: '#173f8d' }}>
+          <a href="https://madmonkeyhostels.com/events/FIFA-2026-schedule" className="w-full py-5 px-8 border-4 border-black flex items-center justify-between font-medium text-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg" style={{ backgroundColor: '#173f8d' }}>
             <div className="flex flex-col">
               <span>FIFA 2026 Schedule</span>
               <span className="text-xs normal-case tracking-normal opacity-90">Don't miss a game with Mad Monkey</span>
