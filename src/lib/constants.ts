@@ -6,7 +6,8 @@ export const THEMES: Record<PropertyCategory, ThemeConfig> = {
   [PropertyCategory.CITY]: { primary: '#ff9f43', gradientFrom: '#ff9f43', gradientTo: '#ffc107' },
   [PropertyCategory.HANOI]: { primary: '#ee5253', gradientFrom: '#ee5253', gradientTo: '#ff726d' },
   [PropertyCategory.BANGKOK]: { primary: '#5f27cd', gradientFrom: '#5f27cd', gradientTo: '#9d7cdb' },
-  [PropertyCategory.MANILA]: { primary: '#cd9eff', gradientFrom: '#cd9eff', gradientTo: '#f3e5f5' }
+  [PropertyCategory.MANILA]: { primary: '#cd9eff', gradientFrom: '#cd9eff', gradientTo: '#f3e5f5' },
+  [PropertyCategory.KAMPOT]: { primary: '#b6552a', gradientFrom: '#b6552a', gradientTo: '#e07b39' }
 };
 
 export const PROPERTIES: Property[] = [
@@ -31,7 +32,8 @@ export const PROPERTIES: Property[] = [
   { id: 'hanoi', name: 'Hanoi', country: 'Vietnam', category: PropertyCategory.HANOI, handle: 'hanoi', slug: 'hanoi-mother', whatsappUrl: 'https://chat.whatsapp.com/DpI7WUmVDizAfacDxXwzmw?mode=ac_t', instagramUrl: 'https://instagram.com/madmonkeyhanoi', tiktokUrl: 'https://tiktok.com/@madmonkeyhanoi', checkinUrl: 'https://checkin.madmonkeyhostels.com/?p=hanoi', wifi: { ssid: 'MAD MONKEY G', password: 'jointhemadness', mobileconfig: '/wifi/hanoi.mobileconfig' } },
   { id: 'bangkok', name: 'Bangkok', country: 'Thailand', category: PropertyCategory.BANGKOK, handle: 'bangkok', slug: 'bangkok-mother', whatsappUrl: 'https://chat.whatsapp.com/Ep53YVu6knrDcdamdQuloD', instagramUrl: 'https://instagram.com/madmonkeybangkok', tiktokUrl: 'https://tiktok.com/@madmonkeybangkok', checkinUrl: 'https://checkin.madmonkeyhostels.com/?p=bangkok', wifi: { ssid: 'MADMONKEY-5G', password: 'jointhemadness', mobileconfig: '/wifi/bangkok.mobileconfig' } },
   { id: 'manila', name: 'Manila', country: 'Philippines', category: PropertyCategory.MANILA, handle: 'manila', slug: 'manila-mother', whatsappUrl: 'https://chat.whatsapp.com/Jk0b6DoNRhKFceolBZLj3h?mode=ac_t', instagramUrl: 'https://instagram.com/madmonkeymanila', checkinUrl: 'https://checkin.madmonkeyhostels.com/?p=manila', wifi: { ssid: 'Mad Monkey Manila', password: 'jointhemadness', mobileconfig: '/wifi/manila.mobileconfig' } },
-  { id: 'nacpan-beach', name: 'Nacpan Beach', country: 'Philippines', category: PropertyCategory.BEACH, handle: 'nacpanbeach', slug: 'nacpanbeach-mother', whatsappUrl: 'https://chat.whatsapp.com/LcOhfBqA1VF1HxB6ldGHD1', checkinUrl: 'https://checkin.madmonkeyhostels.com/?p=nacpan-beach' }
+  { id: 'nacpan-beach', name: 'Nacpan Beach', country: 'Philippines', category: PropertyCategory.BEACH, handle: 'nacpanbeach', slug: 'nacpanbeach-mother', whatsappUrl: 'https://chat.whatsapp.com/LcOhfBqA1VF1HxB6ldGHD1', checkinUrl: 'https://checkin.madmonkeyhostels.com/?p=nacpan-beach' },
+  { id: 'kampot', name: 'Kampot', country: 'Cambodia', category: PropertyCategory.KAMPOT, handle: 'kampot', slug: 'kampot-mother', instagramUrl: 'https://instagram.com/madmonkeyhostels', tiktokUrl: 'https://tiktok.com/@madmonkeyhostels', checkinUrl: 'https://checkin.madmonkeyhostels.com/?p=kampot' }
 ];
 
 export const CATEGORY_EMOJIS: Record<PropertyCategory, string> = {
@@ -41,4 +43,5 @@ export const CATEGORY_EMOJIS: Record<PropertyCategory, string> = {
   [PropertyCategory.HANOI]: '🇻🇳',
   [PropertyCategory.BANGKOK]: '🇹🇭',
   [PropertyCategory.MANILA]: '🇵🇭',
+  [PropertyCategory.KAMPOT]: '🇰🇭',
 };
