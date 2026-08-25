@@ -4,7 +4,8 @@ export enum PropertyCategory {
   CITY = 'City',
   HANOI = 'Hanoi',
   BANGKOK = 'Bangkok',
-  MANILA = 'Manila'
+  MANILA = 'Manila',
+  KAMPOT = 'Kampot'
 }
 
 export interface ThemeConfig {
