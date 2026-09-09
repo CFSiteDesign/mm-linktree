@@ -28,6 +28,7 @@ export interface Property {
   checkinUrl?: string;
   ticketsUrl?: string;
   displayHandle?: string; // overrides the @madmonkey... header handle
+  logoUrl?: string; // overrides the default Mad Monkey logo
   whatsappDisabled?: boolean; // show WhatsApp button without a link
   wifi?: {
     ssid: string;
