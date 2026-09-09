@@ -56,7 +56,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
           </div>
 
           <h1 className="font-bold text-lg text-neutral-900 mb-1 tracking-tight w-full text-center">
-            @madmonkey{cleanHandle}
+            {property.displayHandle ?? `@madmonkey${cleanHandle}`}
           </h1>
 
           <p className="font-medium text-[10px] text-neutral-500 mb-6 uppercase tracking-[0.2em]">
@@ -100,6 +100,18 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
             <span>Unlock Loyalty Perks</span>
             <span className="text-xl">⚡️</span>
           </a>
+          {property.ticketsUrl && (
+          <a href={property.ticketsUrl} target="_blank" rel="noopener noreferrer" className="w-full py-5 px-8 bg-black border-4 border-black flex items-center justify-between font-medium text-white shadow-[6px_6px_0px_0px_rgba(0,0,0,0.4)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg">
+            <span>Online Tickets</span>
+            <span className="text-xl">🎟️</span>
+          </a>
+          )}
+          {property.whatsappDisabled && (
+          <div className="w-full py-5 px-8 bg-green-400 border-4 border-black flex items-center justify-between font-medium text-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] uppercase tracking-tight text-lg opacity-80 cursor-default">
+            <span>Join the WhatsApp Group</span>
+            <span className="text-sm normal-case tracking-normal font-bold">Coming Soon</span>
+          </div>
+          )}
           {property.whatsappUrl && (
           <a href={property.whatsappUrl} className="w-full py-5 px-8 bg-green-400 border-4 border-black flex items-center justify-between font-medium text-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg">
             <span>Join the WhatsApp Group</span>
@@ -155,10 +167,10 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
           </div>
 
           <div className="flex gap-14">
-            <a href="https://instagram.com/madmonkeyhostels" className="hover:scale-125 transition-all filter drop-shadow-md" aria-label="Instagram">
+            <a href={property.instagramUrl ?? 'https://instagram.com/madmonkeyhostels'} className="hover:scale-125 transition-all filter drop-shadow-md" aria-label="Instagram">
               <svg className="w-9 h-9 fill-black" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.063 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.063-2.633-.333-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.312.06-2.208.267-2.993.573-.81.314-1.498.736-2.183 1.421-.686.685-1.107 1.373-1.421 2.183-.306.785-.513 1.681-.573 2.993-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.06 1.312.267 2.208.573 2.993.314.81.736 1.498 1.421 2.183.685.686 1.373 1.107 2.183 1.421.785.306 1.681.513 2.993.573 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.312-.06 2.208-.267 2.993-.573.81-.314 1.498-.736 2.183-1.421.686-.685 1.107-1.373 1.421-2.183.306-.785.513-1.681.573-2.993.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.06-1.312-.267-2.208-.573-2.993-.314-.81-.736-1.498-1.421-2.183-.685-.686-1.373-1.107-2.183-1.421-.785-.306-1.681-.513-2.993-.573-1.28-.058-1.688-.072-4.947-.072zM12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             </a>
-            <a href="https://tiktok.com/@madmonkeyhostels" className="hover:scale-125 transition-all filter drop-shadow-md" aria-label="TikTok">
+            <a href={property.tiktokUrl ?? 'https://tiktok.com/@madmonkeyhostels'} className="hover:scale-125 transition-all filter drop-shadow-md" aria-label="TikTok">
               <svg className="w-9 h-9 fill-black" viewBox="0 0 448 512"><path d="M448 209.9a210.1 210.1 0 01-122.8-39.3v178.8A162.6 162.6 0 11185 188.3v89.9a74.6 74.6 0 1052.2 71.2V0h88a121 121 0 00122.8 121.3z"/></svg>
             </a>
           </div>
