@@ -5,7 +5,8 @@ export enum PropertyCategory {
   HANOI = 'Hanoi',
   BANGKOK = 'Bangkok',
   MANILA = 'Manila',
-  KAMPOT = 'Kampot'
+  KAMPOT = 'Kampot',
+  BOAT_PARTY = 'Boat Party'
 }
 
 export interface ThemeConfig {
@@ -25,6 +26,9 @@ export interface Property {
   instagramUrl?: string;
   tiktokUrl?: string;
   checkinUrl?: string;
+  ticketsUrl?: string;
+  displayHandle?: string; // overrides the @madmonkey... header handle
+  whatsappDisabled?: boolean; // show WhatsApp button without a link
   wifi?: {
     ssid: string;
     password: string;
