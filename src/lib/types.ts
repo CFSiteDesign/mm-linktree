@@ -27,6 +27,7 @@ export interface Property {
   tiktokUrl?: string;
   checkinUrl?: string;
   ticketsUrl?: string;
+  mapUrl?: string; // Stippl interactive map (local highlights + weekly events)
   displayHandle?: string; // overrides the @madmonkey... header handle
   logoUrl?: string; // overrides the default Mad Monkey logo
   whatsappDisabled?: boolean; // show WhatsApp button without a link

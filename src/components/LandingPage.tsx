@@ -100,6 +100,12 @@ const LandingPage: React.FC<LandingPageProps> = ({ property, onBack, isStandalon
             <span>Unlock Loyalty Perks</span>
             <span className="text-xl">⚡️</span>
           </a>
+          {property.mapUrl && (
+          <a href={property.mapUrl} target="_blank" rel="noopener noreferrer" className="w-full py-5 px-8 bg-orange-400 border-4 border-black flex items-center justify-between font-medium text-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg">
+            <span>Find Your Fun</span>
+            <span className="text-xl">🗺️</span>
+          </a>
+          )}
           {property.ticketsUrl && (
           <a href={property.ticketsUrl} target="_blank" rel="noopener noreferrer" className="w-full py-5 px-8 bg-black border-4 border-black flex items-center justify-between font-medium text-white shadow-[6px_6px_0px_0px_rgba(0,0,0,0.4)] hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all uppercase tracking-tight text-lg">
             <span>Online Tickets</span>
